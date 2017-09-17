@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="m6e-BE-zdw">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Haptics-->
+        <scene sceneID="vPB-6A-6Pe">
+            <objects>
+                <tableViewController id="BjI-qA-mYm" customClass="TableViewController" customModule="HapticEngineAndHandoff" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="nly-bF-Ts0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="reuseIdentifier" id="ciY-CZ-cUf">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ciY-CZ-cUf" id="R9K-Sl-wwW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="BjI-qA-mYm" id="Wcc-l5-PFK"/>
+                            <outlet property="delegate" destination="BjI-qA-mYm" id="14p-J8-aPz"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Haptics" id="sma-P3-wSc"/>
+                    <connections>
+                        <segue destination="J3r-R9-lLC" kind="show" identifier="InformationSegue" id="wKh-nQ-eG2"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lvG-yc-4sM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1056.8" y="83.208395802098963"/>
+        </scene>
+        <!--Information-->
+        <scene sceneID="FXZ-Nd-ioZ">
+            <objects>
+                <viewController storyboardIdentifier="InformationViewController" title="Information" useStoryboardIdentifierAsRestorationIdentifier="YES" id="J3r-R9-lLC" customClass="InformationViewController" customModule="HapticEngineAndHandoff" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0cb-uF-G9W"/>
+                        <viewControllerLayoutGuide type="bottom" id="zXi-dD-nK2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="N2K-8h-jSL">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="100" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p9w-9a-ydj">
+                                <rect key="frame" x="37.5" y="83.5" width="300" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="Uc9-9Z-C8n"/>
+                                    <constraint firstAttribute="width" constant="300" id="p2L-jS-YoV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aa-XA-0o9">
+                                <rect key="frame" x="16" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="p9w-9a-ydj" firstAttribute="centerY" secondItem="N2K-8h-jSL" secondAttribute="centerY" id="1fu-wl-1G6"/>
+                            <constraint firstItem="p9w-9a-ydj" firstAttribute="centerX" secondItem="N2K-8h-jSL" secondAttribute="centerX" id="nCY-3u-Z6b"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="informationLabel" destination="p9w-9a-ydj" id="9s6-rZ-Nvd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TDe-xS-9i9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1940" y="83"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="NaQ-mS-C6L">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m6e-BE-zdw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Vh1-KJ-0ff">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BjI-qA-mYm" kind="relationship" relationship="rootViewController" id="xUR-5L-wTj"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9p2-Af-spi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="83.208395802098963"/>
+        </scene>
+    </scenes>
+</document>
