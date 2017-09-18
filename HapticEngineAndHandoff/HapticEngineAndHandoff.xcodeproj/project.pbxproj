@@ -238,17 +238,17 @@
 				TargetAttributes = {
 					3673B6DC1F6F1191002B14B3 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = G5J64VS4M5;
+						DevelopmentTeam = 93SN3983XU;
 						ProvisioningStyle = Automatic;
 					};
 					3673B6EE1F6F1191002B14B3 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = G5J64VS4M5;
+						DevelopmentTeam = 93SN3983XU;
 						ProvisioningStyle = Automatic;
 					};
 					3673B6FD1F6F1191002B14B3 = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = G5J64VS4M5;
+						DevelopmentTeam = 93SN3983XU;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -464,7 +464,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = G5J64VS4M5;
+				DEVELOPMENT_TEAM = 93SN3983XU;
 				INFOPLIST_FILE = "HapticEngineAndHandoff WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachaus.HapticEngineAndHandoff.watchkitapp.watchkitextension;
@@ -481,7 +481,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
-				DEVELOPMENT_TEAM = G5J64VS4M5;
+				DEVELOPMENT_TEAM = 93SN3983XU;
 				INFOPLIST_FILE = "HapticEngineAndHandoff WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachaus.HapticEngineAndHandoff.watchkitapp.watchkitextension;
@@ -499,7 +499,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = G5J64VS4M5;
+				DEVELOPMENT_TEAM = 93SN3983XU;
 				IBSC_MODULE = HapticEngineAndHandoff_WatchKit_Extension;
 				INFOPLIST_FILE = "HapticEngineAndHandoff WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = rachaus.HapticEngineAndHandoff.watchkitapp;
@@ -517,7 +517,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = G5J64VS4M5;
+				DEVELOPMENT_TEAM = 93SN3983XU;
 				IBSC_MODULE = HapticEngineAndHandoff_WatchKit_Extension;
 				INFOPLIST_FILE = "HapticEngineAndHandoff WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = rachaus.HapticEngineAndHandoff.watchkitapp;
@@ -534,7 +534,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = G5J64VS4M5;
+				DEVELOPMENT_TEAM = 93SN3983XU;
 				INFOPLIST_FILE = HapticEngineAndHandoff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachaus.HapticEngineAndHandoff;
@@ -547,7 +547,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = G5J64VS4M5;
+				DEVELOPMENT_TEAM = 93SN3983XU;
 				INFOPLIST_FILE = HapticEngineAndHandoff/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = rachaus.HapticEngineAndHandoff;
@@ -575,6 +575,7 @@
 				3673B7121F6F1191002B14B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3673B7141F6F1191002B14B3 /* Build configuration list for PBXNativeTarget "HapticEngineAndHandoff WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -583,6 +584,7 @@
 				3673B7161F6F1191002B14B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3673B7181F6F1191002B14B3 /* Build configuration list for PBXNativeTarget "HapticEngineAndHandoff" */ = {
 			isa = XCConfigurationList;
@@ -591,6 +593,7 @@
 				3673B71A1F6F1191002B14B3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

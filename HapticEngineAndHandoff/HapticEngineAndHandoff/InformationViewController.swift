@@ -7,17 +7,34 @@
 //
 
 import UIKit
+import WatchConnectivity
 
-class InformationViewController: UIViewController {
+class InformationViewController: UIViewController, NSUserActivityDelegate {
 
     @IBOutlet weak var informationLabel: UILabel!
     
     var haptic: String?
-    
+  
+    var session: WCSession!
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 
         informationLabel.text = returnTextForHaptic()
+      
+        if WCSession.isSupported() {
+          session = WCSession.default()
+          session.delegate = self
+          session.activate()
+        }
+      
+        let message = ["Text":returnTextForHaptic()]
+        session.sendMessage(message, replyHandler: nil, errorHandler: nil)
+        let activity = NSUserActivity(activityType: "it.iachieved.hapticengineandhandoff.viewing.text")
+        activity.title = "Viewing"
+        activity.userInfo = ["teste":returnTextForHaptic()]
+        self.userActivity = activity
+        self.userActivity?.becomeCurrent()
     
     }
     
@@ -57,5 +74,32 @@ class InformationViewController: UIViewController {
         
         return ""
     }
+  
+  override func restoreUserActivityState(_ activity: NSUserActivity) {
+    self.informationLabel.text = activity.userInfo?["teste"] as? String
+  }
 
 }
+
+extension InformationViewController : WCSessionDelegate {
+  
+  func session(_ session: WCSession, activationDidCompleteWith activationState: WCSessionActivationState, error: Error?) {
+    
+  }
+  
+  func sessionDidBecomeInactive(_ session: WCSession) {
+    
+  }
+  
+  func sessionDidDeactivate(_ session: WCSession) {
+    
+  }
+  
+}
+
+
+
+
+
+
+
